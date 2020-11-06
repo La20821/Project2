@@ -1,0 +1,21 @@
+html {
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: silver;
+    background-color: #4F4846;
+    padding: 30px;
+}
+
+body {
+    height: 100%;
+    text-align: center;
+    background-image: linear-gradient(#E8CEBF,#DDAF94);
+    
+}
+
+a {
+    padding-top: 20px;
+}

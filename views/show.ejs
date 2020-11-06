@@ -3,17 +3,22 @@
     <head>
         <meta charset="utf-8">
         <title></title>
+        <link rel="stylesheet" href="/css/show.css">
     </head>
     <body>
-        <h1>Library Book Display</h1>
+        <h1>Library Book Info</h1>
         <%= books.title %> was written by <%= books.author %>
 
         <h2>Book was added by <%=books.Reader.name%></h2>
+        <!-- <%=books.id%> -->
+       
 
         
 
         <form action="/books/<%=books.id %>?_method=DELETE" method="POST">
             <input type="submit" value="DELETE <%= books.name %>" />
           </form>
+
+          <a href="/books">Back to Library</a>
     </body>
 </html>    

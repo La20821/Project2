@@ -3,27 +3,51 @@
     <head>
         <meta charset="utf-8">
         <title></title>
-        <link rel="stylesheet" href="/css/app.css">
+        <link rel="stylesheet" href="/css/bookindex.css">
     </head>
     <body>
-        <h1>Books Index Page</h1>
+    <header>
+    
+
+        
+        <h1>Books Index Page
+            <nav>
+                <a class='nav' href="views/authors">Search by Authors</a>
+                <a class='nav' href="views/authors"> Search by Genre</a>
+            </nav>
+        </h1>
+
+    </header>
+        <a href="/readers/profile/:id"> Back to My Profile</a>
         
         <nav>
+            <div class="new">
             <a href="/books/new">Add a New Book</a>
+            </div>
         </nav>
-  
+
+        <div class="outcontainer">
+        <div class="container">
         <ul>
+            <div class="book">
             <% for(let i=0; i<books.length; i++) { %>
                 <li>
                     <a href="/books/<%=books[i].id%>"> <%=books[i].title%> </a> 
-                
+            </div>
+
                 <form action="/books/<%=books[i].id; %>?_method=DELETE" method="POST">
                     <input type="submit" value="delete">
 
-                    <a href="/books/<%=i; %>/edit">Edit Info</a>
 
+                    <div class="edit">
+                        <a href="/books/<%=books[i].id%>/edit">Edit Info</a>
+                    </div>
+        
                 </li>
+            
             <% } %>
         </ul>
+        </div>
+        </div>
     </body>
 </html>

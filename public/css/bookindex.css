@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@500&family=Tangerine:wght@700&display=swap');
+
+html {
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: silver;
+    background-color: #4F4846;
+    padding: 50px;
+    font-family: 'Poiret One';
+}
+
+.nav {
+    color: silver;
+    font-weight: bolder;
+}
+
+body {
+    height: 100%;
+    background-image: linear-gradient(#E8CEBF, #DDAF94);
+    text-align: center;
+}
+
+.new {
+    font-size: 25px;
+    font-family: 'Poppins', italic;
+    color: #FDF8F5
+}
+
+ul { 
+    font-size: 20px;
+   
+}
+
+li {
+    padding: 20px;
+}
+
+.edit {
+    font-size: 15px;
+    
+    
+}
+
+div.outcontainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+    
+    
+}
+
+/* .container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    border: 2px solid black;
+    width: 300px;
+    
+} */
+
+.books {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    border: 2px solid black;
+    width: 300px;
+}
+
+a {
+    font-size: 20px;
+}

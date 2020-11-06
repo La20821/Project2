@@ -1,0 +1,33 @@
+html {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: silver;
+    background-color: #4F4846;
+    padding: 30px;
+}
+
+body {
+    height: 100%;
+    text-align: center;
+    background-image: linear-gradient(#E8CEBF,#DDAF94);
+    
+}
+
+.container {
+    width: 250px;
+    height: auto;
+    padding: 20px 30px;
+    background-color: silver;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 000;
+    margin: auto;
+}
+
+body, input { 
+    font-size: 20px;
+}

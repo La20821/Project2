@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@500&family=Tangerine:wght@700&display=swap');
+
+html {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: silver;
+    background-color: #4F4846;
+    padding: 30px;
+    font-family: 'Poiret One';
+}
+
+body {
+    height: 100%;
+    text-align: center;
+    background-image: linear-gradient(#E8CEBF,#DDAF94);
+    background-image: url("https://i.imgur.com/L9m9hFp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 250px;
+    height: auto;
+    padding: 20px 30px;
+    background-color: #DDAF94
+    ;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 000;
+    margin: auto;
+}
+
+input { 
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif; 
+}

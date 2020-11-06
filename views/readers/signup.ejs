@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Member Sign Up</title>
+    <link rel="stylesheet" href="/css/signup.css"/>
 </head>
 <body>
     <h1> New Member Sign Up</h1>
     <form action='/auth' method='POST'>
+    <div class="container">
     Name: <input type = "text" name="name" /><br/>
     Create Username: <input type ="text" name="username" /><br>
     Create Password: <input type ="text" name="password" /><br>
@@ -15,6 +17,7 @@
     Favorite Genre: <input type ="text" name="genre" /><br>
     Favorite Author: <input type ="text" name="author" /><br>
     <input type="submit" name="" value="Start Reading"/>
+    </div>
     </form>
 </body>
 </html>

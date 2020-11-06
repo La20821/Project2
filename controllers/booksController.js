@@ -32,17 +32,19 @@ router.get("/new", (req, res) => {
   });
 
 //UPDATE - Reader can edit book info 
-router.get("/:id/edit", function (req, res) {
-    res.render("edit.ejs", //render views/edit.ejs
-      {
-        books: books,
-      }
-    );
-  });
+router.get("/:id/edit", function(req, res) {
+  Books.findByPk(req.params.id).then((books) => {
+    res.render("edit.ejs", {
+      books: books,
+    })
+
+  }) 
+  })
+
+
 
   router.put('/:id', (req, res) => {
     books[req.params.index] = req.body;
-
     Books.update(req.body, {
       where: {id: req.params.id},
       returning: true,
@@ -50,6 +52,12 @@ router.get("/:id/edit", function (req, res) {
       res.redirect('/books');
     });
 });
+
+// router.put('/:id', (req, res) => {
+//   console.log('req.params.id',req.params.id)
+//   books[req.params.index] = req.body
+//   res.redirect('/books');
+// });
 
 // Add A New Book
 router.post('/', (req, res) => {

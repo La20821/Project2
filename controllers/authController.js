@@ -16,12 +16,13 @@ router.post("/", (req, res) => {
       bcrypt.hash(req.body.password, salt, (err, hashedPwd) => {
         if (err) return res.status(500).json(err);
         req.body.password = hashedPwd;
+        
         Reader.create(req.body)
           .then((newReader) => {
             const token = jwt.sign(
               {
-              username: foundReader.username,
-                    id: foundReader.id
+              username: newReader.username,
+                    id: newReader.id
                 },
                 process.env.JWT_SECRET,
               {
