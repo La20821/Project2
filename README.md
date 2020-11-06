@@ -6,15 +6,11 @@ The purpose of this application is to allow readers to create accounts and use t
 ### Entity Relationship Diagram
 ![image](https://user-images.githubusercontent.com/68744076/97807143-c0901300-1c24-11eb-9cf2-dc6c3169de22.png)
 
-### MVP/Post MVP
-#### MVP 
-  * Identify and external API to use for app
-  * Use code to render the required data(users info, book history) on web browser pages
-  * Allow the user to interact with the page using mouse clicks and page buttons
-  
-#### Post MVP
-  * Add local storage for readers app
-
+## General Requirements Met/MVP
+  * Functioning Web Application using NODE, Postgress, Express, and EJS
+  * Implement MVC structure: Models, Views Controllers
+  * 7 RESTful routes and full CRUD
+  * Git Repository created
 
 ### Collaboration
 Although this is an individual project, it will be neccessary in this industry to be able to effetively work collaboratively. It may be often that you need to either search for answers or allow your more expierenced peers to share their knowledge. Prior to beginning my project, I discussed with my instructor my ideas regarding the project set up. It was expressed the importance of building a solid project foundation to build from. That foundation includes a clearly struct ER diagram, straightforward user stories, and a created repository with readme file. 
@@ -47,3 +43,6 @@ Although this is an individual project, it will be neccessary in this industry t
 - As a user, I should be able to maneuver through site easily.
 
 ## Issues and Resolutions
+
+I ran into a couple issues during Deployment where I ended up having to create a new repo to solve. I also went thru a series of debugging various error throughout my assigning of routes. 
+
